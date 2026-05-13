@@ -8,7 +8,9 @@
 </head>
 <body>
     <header class="header">
+        <img src="pizzaplanetalien.webp" alt="alien">
         <h1 class="logo">Pizza Planet</h1>
+
 
         <div class="menu-toggle" id="menu-toggle">
             <span></span>
@@ -22,19 +24,10 @@
             <a href="#contato">Contato</a>
         </nav>
     </header>
-    <section class="hero" id="hero">
-        <div class="overlay">
-            <div class="hero-text">
-                <h2>
-                    A melhor industria <br /> de pizza <br /> do Brasil
-                </h2>
-                <button>Peça agora</button>
-            </div>
-        </div>
-    </section>
+<section class="all">
     <div class="overlay-menu" id="overlay"></div>
     <section class="diferenciais">
-        <h2>Nossos Sabores!</h2>
+        <h2 style="color: rgb(38, 161, 21);">Nossos Sabores!</h2>
         <div class="cards">
             <div class="card">
                 <img src="./abacaxi.jpg" alt="abacaxi" />
@@ -64,7 +57,7 @@
     </section>
     <section class="contato" id="contato">
         <div>
-            <h2 style="color: black">contatos</h2>
+            <h2 style="color: rgb(38, 161, 21);">contatos</h2>
             <div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.4007730360013!2d-49.27483312385781!3d-25.424861432689877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce411bd7d31bd%3A0xd55f5236caf94127!2sR.%20Paula%20Gomes%2C%20270%20-%20S%C3%A3o%20Francisco%2C%20Curitiba%20-%20PR%2C%2080510-070!5e0!3m2!1spt-BR!2sbr!4v1777907137975!5m2!1spt-BR!2sbr"
                     width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -103,5 +96,28 @@
         </div>
     </footer>
     <script src="pp.js"></script>
+    </section>
+    <script>
+
+        document.getElementById('whatsappForm').addEventListener('submit', function(e){
+            e.preventDefault();
+
+            const telefone = '5541999999999';
+            const nome = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            const texto = `
+                olá!\n
+                Meu nome é ${nome}\n
+                Meu email é ${email}\n
+                Mensagem: ${message}
+            `;
+            const textoCodificado = encodeURIComponent(texto);
+            const whatsappURL = `https://wa.me/${telefone}?text=${textoCodificado}`;
+
+            window.open(whatsappURL, "_blank");
+        });
+    </script>
 </body>
 </html>
