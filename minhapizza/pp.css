@@ -27,6 +27,11 @@ body {
     align-items: center;
     padding: 20px 80px;
     z-index: 1000;
+    padding: 5px;
+}
+header img[alt="alien"]{
+    justify-self: flex-start;
+    width: 50px;
 }
 
 .logo {
@@ -115,38 +120,9 @@ body {
     padding: 0 80px;
 }
 
-.hero-text h2 {
-    font-size: 56px;
-    font-weight: 300;
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
-
-.hero-text {
-    max-width: 500px;
-    text-align: right;
-}
-
-.hero-text button {
-    padding: 12px 28px;
-    background: #ff3c00;
-    border: none;
-    color: white;
-    border-radius: 70px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.hero-text button:hover {
-    background: rebeccapurple;
-}
-
-
 /* ***************DIFERENCIAIS************* */
 
 .diferenciais {
-    background: #145a32;
     padding: 80px 20px;
     text-align: center;
 }
@@ -167,7 +143,7 @@ body {
 }
 
 .card {
-    background: #1e6f43;
+    background: #26055c;
     padding: 30px;
     margin: 0 20px;
     border-radius: 12 px;
@@ -195,13 +171,7 @@ body {
     line-height: 1.3;
 }
 
-.contato {
-    background-color: #000;
-}
 
-.rodape {
-    background-color: #000;
-}
 
 .textoC {
     max-width: 800px;
@@ -228,7 +198,7 @@ body {
 }
 
 .contato {
-    background-color: #d9d9d9;
+   
     padding: 50px 20px;
     display: flex;
     justify-content: center;
@@ -243,12 +213,13 @@ body {
 
 .forms input,
 .forms textarea {
-    background-color: #bfbfbf;
+    background-color: #f3f4ff;
     border: none;
-    border-radius: 20px;
+    border-radius: 7px;
     padding: 15px;
     font-size: 16px;
     outline: none;
+    margin: 5px;
 }
 
 .forms textarea {
@@ -258,15 +229,25 @@ body {
 
 .forms button {
     align-self: flex-end;
-    background-color: #1f5e3b;
+    background-color: #eb0b0b;
     color: white;
     border: none;
     border-radius: 20px;
     padding: 12px 30px;
     font-size: 16px;
     cursor: grabbing;
+    margin: 5px;
 }
 
 .forms button:hover {
-    background-color: #174a2e;
+    background-color: #ff7b7b;
+}
+
+
+
+
+.all{
+background-image: url("./Pizza_Planet.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
